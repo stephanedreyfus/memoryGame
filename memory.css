@@ -8,15 +8,23 @@ body {
     display: flex;
     height: 100vh;
     background: rgb(80, 80, 83);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif 3vh;
 }
 
 .move-info {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: auto;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0.3);
-    background: rgb(200, 51, 51);
     color: white;
-    font: impact 1vh;
+}
+.move-info div {
+    border-radius: 5px;
+    background: rgb(200, 51, 51);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0.3);
+    margin: 20px 0;
+    padding: 10px;
 }
 
 .board {

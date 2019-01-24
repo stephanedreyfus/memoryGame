@@ -4,7 +4,8 @@ const cards = document.querySelectorAll('.memory-card');
 let hasFlippedCard = false;
 let lockBoard = false;
 let firstCard, secondCard;
-// let moveCounter = 0;
+let moveCounter = 0;
+let highScore = 0;
 
 (function shuffle(){
     cards.forEach(card => {
@@ -16,7 +17,7 @@ let firstCard, secondCard;
 function flipCard(){
     if (lockBoard) return;
     if (this === firstCard) return;
-    // counterUpdate(++moveCounter);
+    console.log(++moveCounter);
     // Do not yet know how to get this back to HTML
     this.classList.add('flip');
     if (this === firstCard) return;
@@ -29,6 +30,7 @@ function flipCard(){
 
     let isMatch = (firstCard.dataset.framework === secondCard.dataset.framework);
     isMatch ? disableCards() : unflipCards();
+    ifWin();
 }
 
 
@@ -52,10 +54,21 @@ function resetBoard(){
     [firstCard, secondCard] = [null, null];
 }
 
-// function counterUpdate(num){
-//     // Sends counter to display.
-//     return moveCounter;
-// }
+function ifWin(){
+    console.log("Test for win.")
+    if (document.querySelectorAll('.flip').length === 12){
+        if (highScore === 0 || moveCounter < highScore){
+            console.log("Congratulations! With", moveCounter, "moves, you got the new high score!");
+            highScore = moveCounter;
+        } else {
+            console.log("Congratulations! You won in", moveCounter, "clicks.");
+        }
+    }
+}
+
+function gameReset(){
+
+}
 
 // cards.forEach(card => card.addEventListener('click', flipCard));
 
