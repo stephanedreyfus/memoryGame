@@ -6,6 +6,7 @@ let lockBoard = false;
 let firstCard, secondCard;
 let moveCounter = 0;
 let highScore = 0;
+let reset = document.getElementById('reset');
 
 (function shuffle(){
     cards.forEach(card => {
@@ -18,6 +19,8 @@ function flipCard(){
     if (lockBoard) return;
     if (this === firstCard) return;
     console.log(++moveCounter);
+    document.getElementById('move-count').value = moveCounter;
+    console.log("Value of move-count",document.getElementById('move-count').value);
     // Do not yet know how to get this back to HTML
     this.classList.add('flip');
     if (this === firstCard) return;
@@ -66,9 +69,12 @@ function ifWin(){
     }
 }
 
-function gameReset(){
-
-}
+reset.addEventListener('click', function(){
+    console.log("Did we get in the reset function?")
+    resetBoard();
+    moveCounter = 0;
+    document.querySelectorAll('.flip').classList.remove('flip');
+});
 
 // cards.forEach(card => card.addEventListener('click', flipCard));
 
