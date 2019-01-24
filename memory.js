@@ -58,7 +58,6 @@ function resetBoard(){
 }
 
 function ifWin(){
-    console.log("Test for win.")
     if (document.querySelectorAll('.flip').length === 12){
         if (highScore === 0 || moveCounter < highScore){
             console.log("Congratulations! With", moveCounter, "moves, you got the new high score!");
