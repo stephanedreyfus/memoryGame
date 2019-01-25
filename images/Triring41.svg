@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 80.64101615137754 73.32050807568876" version="1.1" xml:space="preserve">
+<defs>
+<polygon id="s11" stroke="#C8C8C8" stroke-opacity="1" stroke-width="2.0" stroke-linejoin="round" points="0.0,0.0 20.0,0.0 10.0,17.32050807568877"/>
+<path id="p11" fill-rule="evenodd" stroke="#D5BD00" stroke-opacity="1" stroke-width="2.0" d="M10.0,0.0 L12.955114688927061,4.067366430758002 L15.0,8.660254037844386 L10.0,9.185775214172768 L5.0,8.660254037844386 L7.044885311072939,4.067366430758002 Z"/>
+<polygon id="s12" stroke="#C8C8C8" stroke-opacity="1" stroke-width="2.0" stroke-linejoin="round" points="0.0,0.0 20.0,0.0 20.0,20.0 0.0,20.0"/>
+<path id="p12" fill-rule="evenodd" stroke="#D5BD00" stroke-opacity="1" stroke-width="2.0" d="M10.0,0.0 L14.20807779837732,5.791922201622681 L20.0,10.0 L14.20807779837732,14.20807779837732 L10.0,20.0 L5.791922201622681,14.20807779837732 L0.0,10.0 L5.791922201622681,5.791922201622681 Z"/>
+</defs>
+<g transform="translate(30.32050807568877 40.32050807568877) scale(1 -1) rotate(0.0)">
+<use xlink:href="#s11" transform="matrix(1.0 0.0 0.0 1.0 0.0 0.0)" fill="#FFFFFF" fill-opacity="1"/>
+<use xlink:href="#s12" transform="matrix(-1.0 0.0 0.0 -1.0 20.0 0.0)" fill="#FFFFFF" fill-opacity="1"/>
+<use xlink:href="#s12" transform="matrix(0.5 -0.8660254037844386 0.8660254037844386 0.5 10.0 17.32050807568877)" fill="#FFFFFF" fill-opacity="1"/>
+<use xlink:href="#s12" transform="matrix(0.5 0.8660254037844386 -0.8660254037844386 0.5 0.0 0.0)" fill="#FFFFFF" fill-opacity="1"/>
+<use xlink:href="#p11" transform="matrix(1.0 0.0 0.0 1.0 0.0 0.0)" fill="#00AAAA" fill-opacity="0"/>
+<use xlink:href="#p12" transform="matrix(-1.0 0.0 0.0 -1.0 20.0 0.0)" fill="#00AAAA" fill-opacity="0"/>
+<use xlink:href="#p12" transform="matrix(0.5 -0.8660254037844386 0.8660254037844386 0.5 10.0 17.32050807568877)" fill="#00AAAA" fill-opacity="0"/>
+<use xlink:href="#p12" transform="matrix(0.5 0.8660254037844386 -0.8660254037844386 0.5 0.0 0.0)" fill="#00AAAA" fill-opacity="0"/>
+</g>
+</svg>

@@ -11,7 +11,7 @@ let winMessage = document.getElementById('win-message');
 
 (function shuffle(){
     cards.forEach(card => {
-        let randomPos = Math.floor(Math.random() * 12);
+        let randomPos = Math.floor(Math.random() * 24);
         card.style.order = randomPos;
     });
 })()
@@ -56,7 +56,7 @@ function resetBoard(){
 }
 
 function ifWin(){
-    if (document.querySelectorAll('.flip').length === 12){
+    if (document.querySelectorAll('.flip').length === 24){
         if (highScore === 0 || moveCounter < highScore){
             winMessage.innerHTML = ("Congratulations! With " + moveCounter.toString() + " moves, you got the new high score!");
             highScore = moveCounter;
@@ -79,6 +79,7 @@ reset.addEventListener('click', function(){
     });
 });
 
+// Leaving this here as an example to myself. Both worked, but the later is where I am currently at.
 // cards.forEach(card => card.addEventListener('click', flipCard));
 
 cards.forEach(function(card){
