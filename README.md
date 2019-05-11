@@ -1,9 +1,10 @@
 # A Simple HTML CSS Memory Game
 
 ### How to Play
-Click about, flipping over cards two at a time, looking for matching pairs. Once they match they
-stay flipped. Try to get a high score by taking as few turns as possible to uncover all the cards.
-At any time you can reset the game using the lower most button on the left.
+Click on any card to flip it. Uncover two at a time, trying to reveal matching pairs. If you don't
+find a match the cards return to their face down position. Once they match they stay flipped. Try
+to get a high score by taking as few turns as possible to uncover all the cards. At any time you
+can reset the game using the lower most button on the left.
 
 #### About
 One of my very first attempts at an app that combined DOM manipulation, CSS, and simple JavaScript.
