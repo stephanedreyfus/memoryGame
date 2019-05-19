@@ -1,4 +1,4 @@
-# A Simple HTML CSS Memory Game
+# A JavaScript Memory Game
 
 ### How to Play
 Click on any card to flip it. Uncover two at a time, trying to reveal matching pairs. If you don't
