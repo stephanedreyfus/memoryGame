@@ -15,4 +15,4 @@ game. I coded them on my own, and was quite happy to see that they produced prop
 #### If There Was Time Unending
 Knowing React it might be quite fun to completely refactor this game. But more important to me would
 be smoothing out the CSS. I would like to clean up the fonts and placement of the information fields,
-and make the whole game response. Finally, it would be nice to add some tests to the app.
+and make app responsive. Finally, it would be nice to add some tests to the app.
