@@ -79,12 +79,7 @@ reset.addEventListener('click', function(){
     });
 });
 
-// Leaving this here as an example to myself. Both worked, but the later is where I am currently at.
-// cards.forEach(card => card.addEventListener('click', flipCard));
-
-cards.forEach(function(card){
-    card.addEventListener('click', flipCard);
-})
+cards.forEach(card => card.addEventListener('click', flipCard));
 
 }
 // Last bracket end of wrapping onload function.
