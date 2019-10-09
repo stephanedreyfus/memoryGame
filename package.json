@@ -1,0 +1,29 @@
+{
+  "name": "memorygame",
+  "version": "1.0.0",
+  "description": "Basic memory card game.",
+  "main": "memory.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephanedreyfus/memoryGame.git"
+  },
+  "keywords": [
+    "memory",
+    "game",
+    "vanilla",
+    "javascript",
+    "html"
+  ],
+  "author": "Stéphane Dreyfus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stephanedreyfus/memoryGame/issues"
+  },
+  "homepage": "https://github.com/stephanedreyfus/memoryGame#readme",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}
