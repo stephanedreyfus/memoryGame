@@ -84,3 +84,4 @@ cards.forEach(card => card.addEventListener('click', flipCard));
 }
 // Last bracket end of wrapping onload function.
 
+module.exports = memory;
