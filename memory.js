@@ -58,11 +58,11 @@ function resetBoard(){
 function ifWin(){
     if (document.querySelectorAll('.flip').length === 24){
         if (highScore === 0 || moveCounter < highScore){
-            winMessage.innerHTML = ("Congratulations! With " + moveCounter.toString() + " moves, you got the new high score!");
+            winMessage.innerHTML = (`Congratulations! With ${moveCounter.toString()} moves, you got the new high score!`);
             highScore = moveCounter;
             document.getElementById('high-score').innerHTML = highScore;
         } else {
-            winMessage.innerHTML = ("Congratulations! You won in " + moveCounter.toString() + " clicks.");
+            winMessage.innerHTML = (`Congratulations! You won in ${moveCounter.toString()} clicks.`);
         }
     }
 }
@@ -84,4 +84,4 @@ cards.forEach(card => card.addEventListener('click', flipCard));
 }
 // Last bracket end of wrapping onload function.
 
-module.exports = memory;
+// module.exports = memory;
