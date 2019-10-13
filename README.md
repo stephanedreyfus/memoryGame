@@ -20,5 +20,8 @@ I am also partnering with my [wife] on adding different art to the cards.
 Knowing React it might be quite fun to completely refactor this game.
 It would be nice to add some tests to the app.
 Have a large store of art and randomize what 12 pieces get chosen per game.
+Menu for choosing a particular art set.
+Manage page loading time with AJAX calls
+Set up loading page or progress bar.
 
 [wife]: https://www.jkungdreyfus.com/
