@@ -8,20 +8,20 @@ can reset the game using the lower most button on the left.
 
 #### About
 One of my very first attempts at an app that combined DOM manipulation, CSS, and simple JavaScript.
-Though the majority of the code was written while following the step by step instructions of an online
-blog post, I am quite happy with the results, especially the information fields to the right of the
-game. I coded them from scratch, at the very beginning of my coding life, and was quite happy to see that they produced proper results!
+Because it was my first app I did a fair amount of pattern matching, but I am quite happy with the results, especially the information fields to the right of the
+game. I coded them without any references and was quite happy to see that they produced proper results!
 
-Recently added some responsiveness to the game so that the information fields remain visible should the screen get quite small.
+More recently I added some adatpive css to the game so that the information fields remain visible should the screen get smaller.
 
 I am also partnering with my [wife] on adding different art to the cards.
 
 #### If There Was Time Unending
-Knowing React it might be quite fun to completely refactor this game.
+Knowing React now, it might be quite fun to completely refactor this game.
 It would be nice to add some tests to the app.
 Have a large store of art and randomize what 12 pieces get chosen per game.
 Menu for choosing a particular art set.
-Manage page loading time with AJAX calls
+Manage page loading time with AJAX calls instead of uploading all at once.
 Set up loading page or progress bar.
+Set up a JSON database to store high scores.
 
 [wife]: https://www.jkungdreyfus.com/
