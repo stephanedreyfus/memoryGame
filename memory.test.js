@@ -1,2 +1,2 @@
-merory = require('./memory');
+memory = require('./memory');
 

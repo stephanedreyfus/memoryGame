@@ -9,6 +9,7 @@ let highScore = 0;
 let reset = document.getElementById('reset');
 let winMessage = document.getElementById('win-message');
 
+// Extranneous parenthesis?
 (function shuffle(){
     cards.forEach(card => {
         let randomPos = Math.floor(Math.random() * 24);
