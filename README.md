@@ -1,4 +1,5 @@
 # A JavaScript Memory Game
+(Host is slow: please give the game a some time to load before clicking.)
 
 ### How to Play
 Click on any card to flip it. Uncover two at a time, trying to reveal matching pairs. If you don't
