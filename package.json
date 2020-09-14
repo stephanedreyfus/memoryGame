@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/stephanedreyfus/memoryGame#readme",
   "devDependencies": {
-    "jest": "^24.9.0"
+    "jest": "^26.4.2"
   }
 }
