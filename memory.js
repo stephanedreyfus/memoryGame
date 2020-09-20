@@ -1,4 +1,6 @@
-window.onload = function(){
+const add = (a, b) => a + b;
+
+window.onload = function memoryGame() {
 const cards = document.querySelectorAll('.memory-card');
 
 let hasFlippedCard = false;
@@ -10,7 +12,7 @@ let reset = document.getElementById('reset');
 let winMessage = document.getElementById('win-message');
 
 // Called immediately.
-(function shuffle(){
+(function shuffle() {
     let nums = new Set();
     cards.forEach(card => {
         let randomPos = Math.floor(Math.random() * 100);
@@ -23,7 +25,7 @@ let winMessage = document.getElementById('win-message');
 })()
 
 
-function flipCard(){
+function flipCard() {
     if (lockBoard) return;
     if (this === firstCard) return;
     document.getElementById('move-count').innerHTML = (++moveCounter);
@@ -42,7 +44,7 @@ function flipCard(){
 }
 
 // Lock board and unflip all cards.
-function unflipCards(){
+function unflipCards() {
     lockBoard = true;
     setTimeout(() => {
         firstCard.classList.remove('flip');
@@ -52,7 +54,7 @@ function unflipCards(){
 }
 
 // Disables click on matched cards, 
-function disableCards(){
+function disableCards() {
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
     resetBoard();
@@ -65,8 +67,8 @@ function resetBoard(){
 }
 
 // Checks for win. If there is a win, an appropriate message is displayed.
-function ifWin(){
-    if (document.querySelectorAll('.flip').length === 24){
+function ifWin() {
+    if (document.querySelectorAll('.flip').length === 24) {
         if (highScore === 0 || moveCounter < highScore){
             winMessage.innerHTML = (`Congratulations! With ${moveCounter.toString()} moves, you got the new high score!`);
             highScore = moveCounter;
@@ -78,7 +80,7 @@ function ifWin(){
 }
 
 // Assign funtionality to reset button.
-reset.addEventListener('click', function(){
+reset.addEventListener('click', function() {
     resetBoard();
     moveCounter = 0;
     document.getElementById('move-count').innerHTML = 0;

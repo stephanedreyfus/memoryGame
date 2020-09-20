@@ -24,7 +24,6 @@ I am also partnering with my [wife] on adding different art to the cards.
 - [ ] Manage page loading time with AJAX calls instead of uploading all at once.
 - [ ] Set up loading page or progress bar.
 - [ ] Set up a JSON database to store high scores.
-- [ ] Testing
 - [X] Fix randomize to not repeat numbers
 
 [wife]: https://www.jkungdreyfus.com/
