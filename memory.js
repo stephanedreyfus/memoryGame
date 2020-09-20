@@ -9,13 +9,19 @@ let highScore = 0;
 let reset = document.getElementById('reset');
 let winMessage = document.getElementById('win-message');
 
-// Extranneous parenthesis?
+// Called immediately.
 (function shuffle(){
+    let nums = new Set();
     cards.forEach(card => {
-        let randomPos = Math.floor(Math.random() * 24);
+        let randomPos = Math.floor(Math.random() * 100);
+        while (nums.has(randomPos)) {
+            randomPos = Math.floor(Math.random() * 100)
+        }
         card.style.order = randomPos;
+        nums.add(randomPos);
     });
 })()
+
 
 function flipCard(){
     if (lockBoard) return;
@@ -35,7 +41,7 @@ function flipCard(){
     ifWin();
 }
 
-
+// Lock board and unflip all cards.
 function unflipCards(){
     lockBoard = true;
     setTimeout(() => {
@@ -45,17 +51,20 @@ function unflipCards(){
     }, 1500);
 }
 
+// Disables click on matched cards, 
 function disableCards(){
     firstCard.removeEventListener('click', flipCard);
     secondCard.removeEventListener('click', flipCard);
     resetBoard();
 }
 
+// Not a full reset, clears variables that manage state of play.
 function resetBoard(){
     [hasFlippedCard, lockBoard] = [false, false];
     [firstCard, secondCard] = [null, null];
 }
 
+// Checks for win. If there is a win, an appropriate message is displayed.
 function ifWin(){
     if (document.querySelectorAll('.flip').length === 24){
         if (highScore === 0 || moveCounter < highScore){
@@ -68,6 +77,7 @@ function ifWin(){
     }
 }
 
+// Assign funtionality to reset button.
 reset.addEventListener('click', function(){
     resetBoard();
     moveCounter = 0;

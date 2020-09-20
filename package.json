@@ -4,7 +4,7 @@
   "description": "Basic memory card game.",
   "main": "memory.js",
   "scripts": {
-    "test": "test"
+    "test": "jest -i"
   },
   "repository": {
     "type": "git",

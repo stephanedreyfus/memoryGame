@@ -17,12 +17,14 @@ More recently I added some adatpive css to the game so that the information fiel
 I am also partnering with my [wife] on adding different art to the cards.
 
 #### If There Was Time Unending
-Knowing React now, it might be quite fun to completely refactor this game.
-It would be nice to add some tests to the app.
-Have a large store of art and randomize what 12 pieces get chosen per game.
-Menu for choosing a particular art set.
-Manage page loading time with AJAX calls instead of uploading all at once.
-Set up loading page or progress bar.
-Set up a JSON database to store high scores.
+- [ ] Knowing React now, it might be quite fun to completely refactor this game.
+- [ ] It would be nice to add some tests to the app.
+- [ ] Have a large store of art and randomize what 12 pieces get chosen per game.
+- [ ] Menu for choosing a particular art set.
+- [ ] Manage page loading time with AJAX calls instead of uploading all at once.
+- [ ] Set up loading page or progress bar.
+- [ ] Set up a JSON database to store high scores.
+- [ ] Testing
+- [X] Fix randomize to not repeat numbers
 
 [wife]: https://www.jkungdreyfus.com/
