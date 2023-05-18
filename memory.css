@@ -59,7 +59,7 @@ body {
     }
 }
 
-.board {
+#board {
     order: 1;
     width: 30.4em;
     margin: 1em auto 1em;

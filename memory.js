@@ -1,6 +1,54 @@
+// Small function sent to testing to ensure page load.
 const add = (a, b) => a + b;
 
 window.onload = function memoryGame() {
+    
+// Array of card face images
+const cardFaces = [
+    {title: "Adulthood", file: "Adulthood.png"},
+    {title: "Hak061", file: "Hak061.png"},
+    {title: "Hak279", file: "Hak279.png"},
+    {title: "Kandinsky", file: "kandinsky.png"},
+    {title: "Mondrian2", file: "mondrian2.png"},
+    {title: "Originedumonde", file: "originedumonde.png"},
+    {title: "Picasso2", file: "Picasso2.png"},
+    {title: "Delauney", file: "delauney.png"},
+    {title: "Flower4", file: "Flower4.svg"},
+    {title: "Rhombille", file: "Rhombille.svg"},
+    {title: "Star_ball_5", file: "Star_ball_5.svg"},
+    {title: "Triring41", file: "Triring41.svg"}
+];
+
+function createCards() {
+    const board = document.getElementById("board");
+    for (face of cardFaces) {
+        // Create parts of card
+        const c = document.createElement("div");
+        const f = document.createElement("img");
+        const b = document.createElement("img");
+
+        c.classList.add("memory-card");
+        c.dataset.framework = `${face.title}`;
+
+        f.classList.add("front");
+        f.src = `public/${face.file}`;
+        f.alt = `${face.title}`;
+
+        b.classList.add("back");
+        b.src = "public/phenomenal_site.png";
+        b.alt = alt="Memory Card";
+
+        c.append(f);
+        c.append(b);
+
+        board.append(c);
+    }
+}
+
+// Need two of each card!
+createCards();
+createCards();
+
 const cards = document.querySelectorAll('.memory-card');
 
 let hasFlippedCard = false;
